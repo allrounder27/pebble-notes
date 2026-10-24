@@ -1,6 +1,6 @@
 // Personalise everything here.
 const CONFIG = {
-  name: "my love",
+  name: "Mansi baby",
   letter:
     "I've been thinking about what happened, and I know I hurt you. " +
     "That was never what I wanted, and I'm truly, deeply sorry.\n\n" +
