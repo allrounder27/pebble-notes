@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>For you ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hearts-bg" aria-hidden="true"></div>
+
+  <!-- 1. Envelope -->
+  <section class="scene active" id="scene-envelope">
+    <p class="hint">Hey <span class="her-name"></span>, someone left you a letter…</p>
+    <button class="envelope" id="envelope" aria-label="Open the letter">
+      <span class="flap"></span>
+      <span class="seal">♥</span>
+    </button>
+    <p class="hint small">tap the envelope</p>
+  </section>
+
+  <!-- 2. The apology -->
+  <section class="scene" id="scene-letter">
+    <div class="card letter">
+      <h1>Dear <span class="her-name"></span>,</h1>
+      <p id="typewriter" class="typewriter"></p>
+      <button class="btn" id="to-reasons" hidden>Keep reading →</button>
+    </div>
+  </section>
+
+  <!-- 3. Reasons -->
+  <section class="scene" id="scene-reasons">
+    <h2>A few things I never want you to doubt</h2>
+    <p class="hint small">tap each card</p>
+    <div class="grid" id="reasons"></div>
+    <button class="btn" id="to-promises" hidden>One more thing →</button>
+  </section>
+
+  <!-- 4. Promises -->
+  <section class="scene" id="scene-promises">
+    <div class="card">
+      <h2>My promises to you</h2>
+      <ul class="promises" id="promises"></ul>
+      <button class="btn" id="to-question" hidden>Okay, the big question →</button>
+    </div>
+  </section>
+
+  <!-- 5. Forgive me? -->
+  <section class="scene" id="scene-question">
+    <div class="card question">
+      <div class="puppy">🥺</div>
+      <h2>Will you forgive me?</h2>
+      <div class="choices">
+        <button class="btn yes" id="yes">Yes ♥</button>
+        <button class="btn no" id="no">No</button>
+      </div>
+      <p class="hint small" id="no-text"></p>
+    </div>
+  </section>
+
+  <!-- 6. Yay -->
+  <section class="scene" id="scene-yay">
+    <div class="card">
+      <div class="big">🤗💖</div>
+      <h1>Thank you, <span class="her-name"></span>!</h1>
+      <p>You just made me the happiest person alive. I love you, and I'll prove it every single day.</p>
+      <div class="coupon" id="coupon">
+        <span>🎟️ Redeemable coupon</span>
+        <strong>1 giant hug + your favourite dinner, my treat</strong>
+        <small>no expiry · no conditions</small>
+      </div>
+      <button class="btn" id="replay">Read it again ↺</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
